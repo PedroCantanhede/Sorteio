@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #f0c21b;
+    --secundary-color: #1a4657;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #013244;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    padding: 60px 32px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.form-header {
+    margin: 0 0 40px;
+}
+
+.form-header i {
+    font-size: 4.5rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.form-header h1 {
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+.form-header h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.form-header p {
+    color: rgba(255, 255, 255, 0.61);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.form-group {
+    margin: 0 0 20px;
+}
+
+.form-group input {
+    outline: none;
+    display: block;
+    background: var(--secundary-color);
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    padding: 12px 20px;
+    color: var(--main-color);
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.form-group button {
+    outline: none;
+    background: var(--main-color);
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    padding: 12px 20px;
+    color: var(--white-color);
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:focus {
+    color: var(--main-color);
+    background: #fff;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.86);
+    font-weight: 500 !important;
+}
+
+.box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-area li {
+    position: absolute;
+    list-style: none;
+    bottom: -150px;
+    animation: animated 20s linear infinite;
+}
+
+.form-result h1 {
+    font-family: 'Kaushan Script', sans-serif;
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+
+/* Animated */
+
+@keyframes animated {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-880px) rotate(360deg);
+    }
+}
+
+.box-area li:nth-child(1) {
+    left: 10%;
+    font-size: 20px;
+    color: var(--secundary-color);
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(3) {
+    left: 26%;
+    font-size: 30px;
+    color: var(--secundary-color);
+    animation-delay: 5s;
+}
+
+.box-area li:nth-child(5) {
+    left: 50%;
+    font-size: 25px;
+    color: var(--secundary-color);
+    animation-delay: 2s;
+}
+
+.box-area li:nth-child(7) {
+    left: 60%;
+    font-size: 45px;
+    color: var(--secundary-color);
+    animation-delay: 4.5s;
+}
+
+.box-area li:nth-child(9) {
+    left: 80%;
+    font-size: 30px;
+    color: var(--secundary-color);
+    animation-delay: 6s;
+}
+
+.box-area li:nth-child(2) {
+    left: 90%;
+    font-size: 20px;
+    color: var(--secundary-color);
+    animation-delay: 4.5s;
+    animation-direction: 10s;
+}
+
+.box-area li:nth-child(4) {
+    left: 73%;
+    font-size: 30px;
+    color: var(--secundary-color);
+    border-radius: 50px;
+    animation-delay: 15s;
+}
+
+.box-area li:nth-child(6) {
+    left: 47%;
+    font-size: 25px;
+    color: var(--secundary-color);
+    border-radius: 50px;
+    animation-delay: 3.8s;
+}
+
+.box-area li:nth-child(8) {
+    left: 38%;
+    font-size: 45px;
+    color: var(--secundary-color);
+    border-radius: 50px;
+    animation-delay: 16s;
+}
+
+.box-area li:nth-child(10) {
+    left: 19%;
+    font-size: 30px;
+    color: var(--secundary-color);
+    border-radius: 50px;
+    animation-delay: 1.2s;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .content {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-header {
+        margin-top: 35%;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="./img/icon.png" type="img/png">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e3c5453e4f.js" crossorigin="anonymous"></script>
+
+    <title>Sorteio</title>
+</head>
+<body>
+    <div class="form-bg">
+        <div class="content">
+            <div class="form-header">
+                <div class="logo"><i class="fas fa-crown"></i></div>
+                <h1>Sorteio</h1>
+                <h2>By Pedro Cantanhêde</h2>
+                <p>Escolha o número máximo que você deseja sortear</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="text" id="numberdraw" placeholder="Exemplo: 20">
+                </div>
+
+                <div class="form-group">
+                    <button onclick="draw()">Sortear</button>
+                </div>
+
+                <div class="form-result">
+                    <h1 id="result"></h1>
+                </div>
+
+            </form>
+        </div>
+        
+            <div class="animation-area">
+                <ul class="box-area">
+                    <li class="fa fa-plus"></li>
+                    <li class="fas fa-circle"></li>
+                    <li class="fa fa-plus"></li>
+                    <li class="fas fa-circle"></li>
+                    <li class="fa fa-plus"></li>
+                    <li class="fas fa-circle"></li>
+                    <li class="fa fa-plus"></li>
+                    <li class="fas fa-circle"></li>
+                    <li class="fa fa-plus"></li>
+                    <li class="fas fa-circle"></li>
+                </ul>
+            </div>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
