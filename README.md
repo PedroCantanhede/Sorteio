@@ -18,7 +18,7 @@
 
 Desafio proposto pelo Igor do curso Programador BR com o intuito de elaborar uma simples página de sorteio.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c0a8e42d-208a-41cd-aabe-c5f405a37e3b/deploy-status)](https://app.netlify.com/sites/pagina-sorteio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c0a8e42d-208a-41cd-aabe-c5f405a37e3b/deploy-status)](https://pagina-sorteio.netlify.app/)
 
 <div align="center" >
   <img src="./github/note.png" alt="demo-web" height="500">
